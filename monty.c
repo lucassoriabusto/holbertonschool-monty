@@ -9,6 +9,7 @@ int main(int argc; char **argv)
 	char *buf;
 	int fo, fr;
 	char *imput, *token = NULL;
+	int c;
 
 
 	fo = open(argv[1], O_RDONLY);
@@ -22,6 +23,6 @@ int main(int argc; char **argv)
 	{
 		token = strtok(imput; " \t\n");
 		fr = read(fo, buf);
-		imput++;
+		c++;
 	}
 }
